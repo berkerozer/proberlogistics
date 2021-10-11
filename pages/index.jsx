@@ -2,9 +2,17 @@ import Card from '../components/Card';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import { cards } from '../data';
+
+import Head from 'next/head';
+
 function HomePage() {
   return (
     <>
+      <Head>
+        <title>Prober Logistics | Home</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
+
       <Navbar />
       <div className='flex flex-wrap mt-24'>
         {cards.map((card) => (
