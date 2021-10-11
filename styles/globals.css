@@ -1,0 +1,62 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  min-height: 450px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-content {
+  cursor: pointer;
+}
+
+.card-content,
+.card-content p,
+.card-content h1,
+.card-content span {
+  transition: 0.3s;
+}
+
+.card-content p.opak {
+  opacity: 0;
+}
+
+.card-content:hover p.opak {
+  opacity: 1;
+}
+
+.card-content.blue:hover {
+  background-color: rgba(100, 148, 237, 0.8);
+}
+.card-content.purple:hover {
+  background-color: rgba(76, 0, 130, 0.8);
+}
+.card-content.green:hover {
+  background-color: rgba(106, 142, 35, 0.8);
+}
+.card-content.red:hover {
+  background-color: rgba(178, 34, 34, 0.8);
+}
+.card-content.black:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-content.black:hover h1,
+.card-content.black p,
+.card-content.black:hover span {
+  color: gold;
+}
+.card-content.lila:hover {
+  background-color: rgba(255, 0, 255, 0.8);
+}
+.card-content.leef:hover {
+  background-color: rgba(143, 188, 143, 0.8);
+}
+.card-content.lime:hover {
+  background-color: rgba(50, 205, 50, 0.8);
+}
+.card-content.brown:hover {
+  background-color: rgba(210, 105, 30, 0.8);
+}
