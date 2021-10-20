@@ -17,17 +17,19 @@ partner.`,
   imageURL: 'resimler/0.jpg',
   color: 'blue',
   Icon: IoBusiness,
-  width: 6
+  width: 6,
+  link: './about'
 }, {
   id: 1,
   title: 'SERVICES',
-  content: 'Real-time order preparation (on request), specific added-value services on industrial products, high-tech, food and pharmaceuticals (labelling, packaging, special offer packs, assembly, etc.).',
+  content: 'With the power of 40 years of experience in logistics, warehousing and distribution, Prober Logistics offers all the instruments of integrated logistics.',
   textWhite: true,
   showContent: false,
   imageURL: 'resimler/8.jpg',
   color: 'purple',
   Icon: GrSettingsOption,
-  width: 3
+  width: 3,
+  link: ''
 },
 {
   id: 2,
@@ -39,7 +41,8 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'resimler/2.jpg',
   color: 'green',
   Icon: GiHealingShield,
-  width: 3
+  width: 3,
+  link: './sheq'
 },
 {
   id: 3,
@@ -50,7 +53,8 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'cardimages/3.jpg',
   color: 'red',
   Icon: IoGitNetworkSharp,
-  width: 3
+  width: 3,
+  link: ''
 },
 {
   id: 4,
@@ -61,7 +65,8 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'resimler/5.jpg',
   color: 'black',
   Icon: BsVectorPen,
-  width: 3
+  width: 3,
+  link: ''
 },
 {
   id: 5,
@@ -72,7 +77,8 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'resimler/11.jpg',
   color: 'lime',
   Icon: MdModelTraining,
-  width: 6
+  width: 6,
+  link: ''
 },
 {
   id: 6,
@@ -83,7 +89,8 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'cardimages/8.jpg',
   color: 'brown',
   Icon: FaTrain,
-  width: 4
+  width: 4,
+  link: 'https://www.forbes.com/sites/ryder/2021/03/01/video-unveiling-the-future-of-logistics/?sh=2ebf673b30a3'
 },
 {
   id: 7,
@@ -94,7 +101,8 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'resimler/fide-resim.jpg',
   color: 'lila',
   Icon: BsFlower3,
-  width: 4
+  width: 4,
+  link: 'https://www.dw.com/en/covid-19-vegetarians-vegans-get-less-sick/av-58147508'
 },
 {
   id: 8,
@@ -105,5 +113,6 @@ Safety, Health, Environment and Quality (SHEQ) standards and regulations.`,
   imageURL: 'resimler/0.jpg',
   color: 'leef',
   Icon: GrContactInfo,
-  width: 4
+  width: 4,
+  link: ''
 }]

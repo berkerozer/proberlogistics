@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import Link from 'next/link';
 
 function Card(props) {
   return (
@@ -13,27 +14,33 @@ function Card(props) {
         backgroundImage: `url(${props.imageURL})`,
       }}
     >
-      <div className={`p-10 w-100 h-full card-content relative ${props.color}`}>
-        <h1
-          className={`${
-            props.textWhite ? 'text-white' : ''
-          } text-3xl font-extralight`}
-        >
-          {props.title}
-        </h1>
-        <br />
-        <p
-          className={`${props.textWhite ? 'text-white' : ''} ${
-            props.showContent ? '' : 'opak'
-          }`}
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        ></p>
-        <span className=' absolute right-10 bottom-10'>
-          <props.Icon
-            className={`${props.textWhite ? 'text-white' : ''} text-3xl`}
-          />
-        </span>
-      </div>
+      <Link href={props.link}>
+        <a>
+          <div
+            className={`p-10 w-100 h-full card-content relative ${props.color}`}
+          >
+            <h1
+              className={`${
+                props.textWhite ? 'text-white' : ''
+              } text-3xl font-extralight`}
+            >
+              {props.title}
+            </h1>
+            <br />
+            <p
+              className={`${props.textWhite ? 'text-white' : ''} ${
+                props.showContent ? '' : 'opak'
+              }`}
+              dangerouslySetInnerHTML={{ __html: props.content }}
+            ></p>
+            <span className='absolute right-10 bottom-10'>
+              <props.Icon
+                className={`${props.textWhite ? 'text-white' : ''} text-3xl`}
+              />
+            </span>
+          </div>
+        </a>
+      </Link>
     </div>
   );
 }

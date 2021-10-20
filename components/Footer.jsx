@@ -15,10 +15,10 @@ export const Footer = () => {
     >
       <div className='flex px-10 py-16 border-b border-gray-600'>
         <div className='w-1/4'>
-          <h1 className=' text-lg font-semibold'>ABOUT OUR COMPANY</h1>
-          <div className=' w-10 h-1 bg-blue-300 mb-8'></div>
+          <h1 className='text-lg font-semibold '>ABOUT OUR COMPANY</h1>
+          <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
           {/* <img src='images/logo_white_footer.png' alt='' /> */}
-          <p className='font-extralight text-xs mt-4 mr-8'>
+          <p className='mt-4 mr-8 text-xs font-extralight'>
             Prober Logistics has acquired superior service quality habit with
             honesty, transparency, reliability, and lucidity. Prober Logistics
             produces the most rational solutions with timely, cost- efficient,
@@ -27,9 +27,9 @@ export const Footer = () => {
           </p>
         </div>
         <div className='w-1/4'>
-          <h1 className=' text-lg font-semibold'>USEFUL LINKS</h1>
-          <div className=' w-10 h-1 bg-blue-300 mb-8'></div>
-          <ul className='font-extralight text-xs space-y-4'>
+          <h1 className='text-lg font-semibold '>USEFUL LINKS</h1>
+          <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
+          <ul className='space-y-4 text-xs font-extralight'>
             <li>
               <a href='#'>About Us</a>
             </li>
@@ -48,9 +48,9 @@ export const Footer = () => {
           </ul>
         </div>
         <div className='w-1/4'>
-          <h1 className=' text-lg font-semibold'>SERVICES</h1>
-          <div className=' w-10 h-1 bg-blue-300 mb-8'></div>
-          <ul className='font-extralight text-xs space-y-4'>
+          <h1 className='text-lg font-semibold '>SERVICES</h1>
+          <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
+          <ul className='space-y-4 text-xs font-extralight'>
             <li>
               <a href='#'>Intermodal</a>
             </li>
@@ -72,29 +72,30 @@ export const Footer = () => {
           </ul>
         </div>
         <div className='w-1/4'>
-          <h1 className=' text-lg font-semibold'>CONTACT INFO</h1>
-          <div className=' w-10 h-1 bg-blue-300 mb-8'></div>
-          <p className='font-extralight text-xs mr-8'>
-            Address : Istanbul, Turkey
+          <h1 className='text-lg font-semibold '>CONTACT INFO</h1>
+          <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
+          <p className='mr-8 text-xs font-extralight'>
+            Büyükbakkalköy Mh. Samandıra Yolu Sk. No: 24 <br />
+            34858 Maltepe / İSTANBUL
             <br />
             <br />
             Mail : info@proberlogistics.com
           </p>
-          <h1 className=' text-lg font-semibold mt-8'>NEWSLETTER</h1>
-          <div className=' w-10 h-1 bg-blue-300 mb-8'></div>
+          <h1 className='mt-8 text-lg font-semibold '>NEWSLETTER</h1>
+          <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
           <input
             type='text'
-            className=' bg-transparent border-2 border-white rounded-3xl px-4 py-2'
+            className='px-4 py-2 bg-transparent border-2 border-white rounded-3xl'
             placeholder='Email Address'
           />
         </div>
       </div>
       <div className='flex items-center px-10'>
-        <p className='font-extralight text-xs'>
+        <p className='text-xs font-extralight'>
           © 2021 Logistic - All Rights Reserved
         </p>
-        <div className='social flex ml-auto text-2xl'>
-          <span className='p-4 border-r border-l border-gray-600'>
+        <div className='flex ml-auto text-2xl social'>
+          <span className='p-4 border-l border-r border-gray-600'>
             <FaFacebookF />
           </span>
           <span className='p-4 border-r border-gray-600'>

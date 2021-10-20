@@ -1,8 +1,11 @@
+import Link from 'next/link';
+
 import { FiMenu } from 'react-icons/fi';
 import { VscClose } from 'react-icons/vsc';
 
 export const Navbar = () => {
   let isMenuOpen = false;
+  let isServicesOpen = false;
 
   const mobilMenu = () => {
     const navbar = document.getElementById('navbar');
@@ -20,54 +23,121 @@ export const Navbar = () => {
     isMenuOpen = !isMenuOpen;
   };
 
+  const services = () => {
+    if (isServicesOpen) {
+      document.getElementById('services').classList.add('hidden');
+      isServicesOpen = !isServicesOpen;
+    } else {
+      document.getElementById('services').classList.remove('hidden');
+      isServicesOpen = !isServicesOpen;
+    }
+  };
+
   return (
     <>
       <div
         id='navbar'
-        className='h-24 transition-all fixed flex flex-wrap items-center top-0 w-full bg-white z-30 px-10 overflow-hidden'
+        className='fixed top-0 z-30 flex flex-wrap items-center w-full h-24 px-10 transition-all bg-white'
       >
         <div className='logo'>
-          {/* <img src='images/logo.png' alt='' className='h-20' /> */}
-          <h2 className='font-semibold text-2xl text-blue-900'>
+          <img src='images/logo.png' alt='' className='h-16' />
+          {/* <h2 className='text-2xl font-semibold text-blue-900'>
             Prober Logistics
-          </h2>
+          </h2> */}
         </div>
-        <div className='menu ml-10 hidden md:block'>
-          <ul className='p-0 m-0 flex space-x-8 font-bold uppercase text-sm'>
+        <div className='hidden ml-10 menu md:block'>
+          <ul className='flex p-0 m-0 space-x-8 text-sm font-bold uppercase'>
             <li>
-              <a href='#' className='text-blue-400'>
-                Home
-              </a>
+              <Link href='./'>
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <a href='#'>Services</a>
+              <Link href='./about'>
+                <a>About Us</a>
+              </Link>
+            </li>
+            <li className='relative'>
+              <button
+                className='text-sm font-bold uppercase'
+                onClick={services}
+              >
+                Services
+              </button>
+              <div
+                className='absolute hidden px-8 py-4 bg-white border border-blue-300 rounded-md w-60 -left-4 top-8'
+                id='services'
+              >
+                <ul className='space-y-4 capitalize'>
+                  <li>
+                    <a href='#'>ROAD FREIGHT</a>
+                  </li>
+                  <li>
+                    <a href='#'>SEA FREIGHT</a>
+                  </li>
+                  <li>
+                    <a href='#'>AIR FREIGHT</a>
+                  </li>
+                  <li>
+                    <a href='#'>INTERMODAL</a>
+                  </li>
+                  <li>
+                    <a href='#'>WAREHOUSING</a>
+                  </li>
+                  <li>
+                    <a href='#'>HEAVY TRANSPORT & SPECIAL PROJECTS</a>
+                  </li>
+                  <li>
+                    <a href='#'>FINE ART LOGISTICS</a>
+                  </li>
+                  <li>
+                    <a href='#'>RAIL FREIGHT</a>
+                  </li>
+                  <li>
+                    <a href='#'>DOMESTIC TRANSPORTATION</a>
+                  </li>
+                  <li>
+                    <a href='#'>INSURANCE</a>
+                  </li>
+                  <li>
+                    <a href='#'>E-COMMERCE LOGISTICS</a>
+                  </li>
+                  <li>
+                    <a href='#'>CUSTOMS CLEARANCE</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href='#'>SHEQ</a>
+              <Link href='./sheq'>
+                <a>SHEQ</a>
+              </Link>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <Link href='./contact'>
+                <a>Contact</a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        <div className='settings ml-auto hidden md:block'>
+        <div className='hidden ml-auto settings md:block'>
           <img
             src='images/english.jpg'
             alt=''
-            className='w-10 rounded-full border border-black'
+            className='w-10 border border-black rounded-full'
           />
         </div>
         <div
           onClick={mobilMenu}
-          className='mobil ml-auto md:hidden border p-3 rounded-full border-black'
+          className='p-3 ml-auto border border-black rounded-full mobil md:hidden'
         >
           <FiMenu id='menu' className='text-lg' />
-          <VscClose id='close' className='text-lg hidden' />
+          <VscClose id='close' className='hidden text-lg' />
         </div>
 
-        <div className='menu-mobil ml-10 md:hidden w-full'>
-          <ul className='p-0 m-0 flex flex-col font-bold uppercase text-lg text-center space-y-8 mt-8'>
+        <div className='w-full ml-10 menu-mobil md:hidden'>
+          <ul className='flex flex-col p-0 m-0 mt-8 space-y-8 text-lg font-bold text-center uppercase'>
             <li>
               <a href='#' className='text-blue-400'>
                 Home

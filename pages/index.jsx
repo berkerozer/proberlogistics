@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Card from '../components/Card';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
@@ -21,6 +23,7 @@ function HomePage() {
             width={card.width}
             title={card.title}
             content={card.content}
+            link={card.link}
             imageURL={card.imageURL}
             textWhite={card.textWhite}
             color={card.color}
