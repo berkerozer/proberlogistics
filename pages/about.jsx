@@ -6,6 +6,9 @@ const about = () => {
   return (
     <>
       <Navbar />
+      <div className='md:container md:mx-auto'>
+        <img src='resimler/0.jpg' alt='' className='mt-24 md:mt-0 w-screen' />
+      </div>
       <Content title='company'>
         <h2 className='text-xl'>About Us</h2>
         <p>

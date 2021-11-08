@@ -13,8 +13,8 @@ export const Footer = () => {
         backgroundImage: `url('images/footer_bg.png')`,
       }}
     >
-      <div className='flex px-10 py-16 border-b border-gray-600'>
-        <div className='w-1/4'>
+      <div className='flex px-8 md:px0 md:mx-auto flex-col md:flex-row container py-16 border-b border-gray-600 space-y-8 md:space-y-0'>
+        <div className='md:w-1/4'>
           <h1 className='text-lg font-semibold '>ABOUT OUR COMPANY</h1>
           <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
           {/* <img src='images/logo_white_footer.png' alt='' /> */}
@@ -26,7 +26,7 @@ export const Footer = () => {
             its customers as a solution partner.
           </p>
         </div>
-        <div className='w-1/4'>
+        <div className='md:w-1/4'>
           <h1 className='text-lg font-semibold '>USEFUL LINKS</h1>
           <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
           <ul className='space-y-4 text-xs font-extralight'>
@@ -47,7 +47,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='w-1/4'>
+        <div className='md:w-1/4'>
           <h1 className='text-lg font-semibold '>SERVICES</h1>
           <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
           <ul className='space-y-4 text-xs font-extralight'>
@@ -71,7 +71,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='w-1/4'>
+        <div className='md:w-1/4'>
           <h1 className='text-lg font-semibold '>CONTACT INFO</h1>
           <div className='w-10 h-1 mb-8 bg-blue-300 '></div>
           <p className='mr-8 text-xs font-extralight'>
@@ -103,9 +103,6 @@ export const Footer = () => {
           </span>
           <span className='p-4 border-r border-gray-600'>
             <FaLinkedinIn />
-          </span>
-          <span className='p-4 border-r border-gray-600'>
-            <FaGooglePlusG />
           </span>
         </div>
       </div>
