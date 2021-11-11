@@ -1,6 +1,7 @@
 import Content from '../components/Content';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
+import { MapContainer } from '../components/Map';
 
 const Contact = () => {
   return (
@@ -8,11 +9,7 @@ const Contact = () => {
       <Navbar />
 
       <div className='md:container md:mx-auto'>
-        <img
-          src='https://backtobasics-nutrition.com/wp-content/uploads/2015/07/safety-workforce1-1080x425.jpg'
-          alt=''
-          className='mt-24 w-screen'
-        />
+        <MapContainer />
       </div>
       <Content title='SHEQ (SAFETY, HEALTH, ENVIRONMENT, QUALITY)'>
         tests
@@ -21,5 +18,7 @@ const Contact = () => {
     </>
   );
 };
+
+//AIzaSyBHlZGwLOIhfP3BSIMevjce-xCeP8sXsy8
 
 export default Contact;

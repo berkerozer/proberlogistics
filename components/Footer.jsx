@@ -10,10 +10,10 @@ export const Footer = () => {
     <div
       className='text-white'
       style={{
-        backgroundImage: `url('images/footer_bg.png')`,
+        backgroundImage: `url('/images/footer_bg.png')`,
       }}
     >
-      <div className='flex px-8 md:px0 md:mx-auto flex-col md:flex-row container py-16 border-b border-gray-600 space-y-8 md:space-y-0'>
+      <div className='container flex flex-col px-8 py-16 space-y-8 border-b border-gray-600 md:px0 md:mx-auto md:flex-row md:space-y-0'>
         <div className='md:w-1/4'>
           <h1 className='text-lg font-semibold '>ABOUT OUR COMPANY</h1>
           <div className='w-10 h-1 mb-8 bg-blue-300 '></div>

@@ -5,10 +5,12 @@ import { VscClose } from 'react-icons/vsc';
 
 import MobileMenu from './MobilMenu';
 
+import { services } from '../data';
+
 export const Navbar = () => {
   let isServicesOpen = false;
 
-  const services = () => {
+  const servicesOpen = () => {
     if (isServicesOpen) {
       document.getElementById('services').classList.add('hidden');
       isServicesOpen = !isServicesOpen;
@@ -22,11 +24,11 @@ export const Navbar = () => {
     <>
       <div
         id='navbar'
-        className='hidden md:flex items-center fixed top-0 z-30 w-full h-24 transition-all bg-white shadow'
+        className='fixed top-0 z-30 items-center hidden w-full h-24 transition-all bg-white shadow md:flex'
       >
-        <div className='container mx-auto flex flex-wrap items-center'>
+        <div className='container flex flex-wrap items-center mx-auto'>
           <div className='logo'>
-            <img src='images/logo.png' alt='' className='h-16' />
+            <img src='/images/logo.png' alt='' className='h-16' />
             {/* <h2 className='text-2xl font-semibold text-blue-900'>
             Prober Logistics
           </h2> */}
@@ -46,51 +48,22 @@ export const Navbar = () => {
               <li className='relative'>
                 <button
                   className='text-sm font-bold uppercase'
-                  onClick={services}
+                  onClick={servicesOpen}
                 >
                   Services
                 </button>
                 <div
-                  className='shadow absolute hidden bg-white w-60 -left-4 top-8'
+                  className='absolute hidden bg-white shadow w-60 -left-4 top-8'
                   id='services'
                 >
                   <ul className='capitalize'>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>ROAD FREIGHT</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>SEA FREIGHT</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>AIR FREIGHT</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>INTERMODAL</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>WAREHOUSING</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>HEAVY TRANSPORT & SPECIAL PROJECTS</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>FINE ART LOGISTICS</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>RAIL FREIGHT</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>DOMESTIC TRANSPORTATION</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>INSURANCE</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>E-COMMERCE LOGISTICS</a>
-                    </li>
-                    <li className='hover:shadow py-3 px-6'>
-                      <a href='#'>CUSTOMS CLEARANCE</a>
-                    </li>
+                    {services.map((service) => (
+                      <li className='px-6 py-3 hover:shadow'>
+                        <Link href={service.slug}>
+                          <a>{service.title}</a>
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </li>
@@ -109,7 +82,7 @@ export const Navbar = () => {
 
           <div className='ml-auto settings'>
             <img
-              src='images/english.jpg'
+              src='/images/english.jpg'
               alt=''
               className='w-10 border border-black rounded-full'
             />
