@@ -36,12 +36,12 @@ export const Navbar = () => {
           <div className='ml-10 menu'>
             <ul className='flex p-0 m-0 space-x-8 text-sm font-bold uppercase'>
               <li>
-                <Link href='./'>
+                <Link href='/'>
                   <a>Home</a>
                 </Link>
               </li>
               <li>
-                <Link href='./about'>
+                <Link href='/about'>
                   <a>About Us</a>
                 </Link>
               </li>
@@ -59,7 +59,7 @@ export const Navbar = () => {
                   <ul className='capitalize'>
                     {services.map((service) => (
                       <li className='px-6 py-3 hover:shadow'>
-                        <Link href={service.slug}>
+                        <Link href={`/services/${service.slug}`}>
                           <a>{service.title}</a>
                         </Link>
                       </li>
@@ -68,15 +68,15 @@ export const Navbar = () => {
                 </div>
               </li>
               <li>
-                <Link href='./sheq'>
+                <Link href='/sheq'>
                   <a>SHEQ</a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='./contact'>
                   <a>Contact</a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

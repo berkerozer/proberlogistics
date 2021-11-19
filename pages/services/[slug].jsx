@@ -10,25 +10,25 @@ const SereviceComponent = ({ service }) => {
   return (
     <>
       <Navbar />
-      <div className='container mx-auto mt-32 mb-8 space-x-4 md:flex'>
+      <div className='container px-4 mx-auto mt-32 mb-8 space-y-4 md:px-0 md:space-y-0 md:space-x-4 md:flex'>
         <div className='md:w-2/3'>
           <h1 className='mb-4 text-3xl font-semibold capitalize'>
             {service.title}
           </h1>
           <p dangerouslySetInnerHTML={{ __html: service.content }} />
           <div className='flex mt-16 space-x-32'>
-            <span className='p-4 text-white bg-blue-400 rounded-xl text-8xl'>
+            <span className='p-4 text-4xl text-white bg-blue-400 rounded-xl md:text-8xl'>
               <GiAirplaneDeparture />
             </span>
-            <span className='p-4 text-white bg-blue-400 rounded-xl text-8xl'>
+            <span className='p-4 text-4xl text-white bg-blue-400 rounded-xl md:text-8xl'>
               <FaTruckLoading />
             </span>
-            <span className='p-4 text-white bg-blue-400 rounded-xl text-8xl'>
+            <span className='p-4 text-4xl text-white bg-blue-400 rounded-xl md:text-8xl'>
               <GiCargoCrate />
             </span>
           </div>
         </div>
-        <div className='flex flex-col w-full space-y-4 md:w-1/3'>
+        <div className='flex flex-col space-y-4 md:w-1/3'>
           <h3 className='text-xl font-semibold uppercase'>Any Questions ?</h3>
           <hr />
           <img src='/images/operator.jpg' alt='' />
