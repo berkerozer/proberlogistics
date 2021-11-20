@@ -16,7 +16,7 @@ const SereviceComponent = ({ service }) => {
             {service.title}
           </h1>
           <p dangerouslySetInnerHTML={{ __html: service.content }} />
-          <div className='flex mt-16 space-x-32'>
+          <div className='flex mt-16 space-x-4 md:space-x-32'>
             <span className='p-4 text-4xl text-white bg-blue-400 rounded-xl md:text-8xl'>
               <GiAirplaneDeparture />
             </span>
