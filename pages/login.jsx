@@ -1,6 +1,6 @@
 import Button from '../components/Button';
 import { Footer } from '../components/Footer';
-import Input from '../components/input';
+import Input from '../components/Input';
 import { Navbar } from '../components/Navbar';
 
 import { initializeApp } from 'firebase/app';
