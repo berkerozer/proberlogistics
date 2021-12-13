@@ -72,11 +72,11 @@ export const Navbar = () => {
                   <a>SHEQ</a>
                 </Link>
               </li>
-              {/* <li>
-                <Link href='./contact'>
+              <li>
+                <Link href='/contact'>
                   <a>Contact</a>
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
 
